@@ -324,7 +324,7 @@ def main():
     print("--------------  Initiate System  ------------------")
     sleep(1)
     
-    data_file = BASE_DIR / 'Data_Collection' / 'Users.csv'
+    data_file = BASE_DIR / 'Data_Collection2' / 'Users.csv'
     
     # Ask user 
     answ = str(input("Is this your first time in the system ? : ")).lower()
@@ -345,7 +345,7 @@ def main():
     current_day = datetime.datetime.now()
     testing_datetime = current_day.strftime("%Y%m%d_%H%M%S")
     
-    data_file2 = BASE_DIR / 'Data_Collection' / 'records.csv'
+    data_file2 = BASE_DIR / 'Data_Collection2' / 'records.csv'
     audio_data, sr = capture_audio(3)
     print(*audio_data[:100], sep='\n')
     
